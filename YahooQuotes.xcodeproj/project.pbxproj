@@ -14,6 +14,7 @@
 		E4AEFD0B1AEE7DF3007BEF68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4AEFD0A1AEE7DF3007BEF68 /* Images.xcassets */; };
 		E4AEFD0E1AEE7DF3007BEF68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4AEFD0C1AEE7DF3007BEF68 /* LaunchScreen.xib */; };
 		E4AEFD1A1AEE7DF3007BEF68 /* YahooQuotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AEFD191AEE7DF3007BEF68 /* YahooQuotesTests.m */; };
+		E4AEFD2B1AEFCFE9007BEF68 /* Stock.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AEFD2A1AEFCFE9007BEF68 /* Stock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		E4AEFCFF1AEE7DF3007BEF68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4AEFD011AEE7DF3007BEF68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4AEFD021AEE7DF3007BEF68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E4AEFD041AEE7DF3007BEF68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E4AEFD051AEE7DF3007BEF68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4AEFD041AEE7DF3007BEF68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = YahooQuotes/ViewController.h; sourceTree = "<group>"; };
+		E4AEFD051AEE7DF3007BEF68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = YahooQuotes/ViewController.m; sourceTree = "<group>"; };
 		E4AEFD081AEE7DF3007BEF68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4AEFD0A1AEE7DF3007BEF68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E4AEFD0D1AEE7DF3007BEF68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E4AEFD131AEE7DF3007BEF68 /* YahooQuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YahooQuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AEFD181AEE7DF3007BEF68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4AEFD191AEE7DF3007BEF68 /* YahooQuotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YahooQuotesTests.m; sourceTree = "<group>"; };
+		E4AEFD291AEFCFE9007BEF68 /* Stock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stock.h; sourceTree = "<group>"; };
+		E4AEFD2A1AEFCFE9007BEF68 /* Stock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		E4AEFCF11AEE7DF3007BEF68 = {
 			isa = PBXGroup;
 			children = (
+				E4AEFD281AEFCFCF007BEF68 /* Model */,
+				E4AEFD2C1AEFD012007BEF68 /* Controller */,
 				E4AEFCFC1AEE7DF3007BEF68 /* YahooQuotes */,
 				E4AEFD161AEE7DF3007BEF68 /* YahooQuotesTests */,
 				E4AEFCFB1AEE7DF3007BEF68 /* Products */,
@@ -83,8 +88,6 @@
 			children = (
 				E4AEFD011AEE7DF3007BEF68 /* AppDelegate.h */,
 				E4AEFD021AEE7DF3007BEF68 /* AppDelegate.m */,
-				E4AEFD041AEE7DF3007BEF68 /* ViewController.h */,
-				E4AEFD051AEE7DF3007BEF68 /* ViewController.m */,
 				E4AEFD071AEE7DF3007BEF68 /* Main.storyboard */,
 				E4AEFD0A1AEE7DF3007BEF68 /* Images.xcassets */,
 				E4AEFD0C1AEE7DF3007BEF68 /* LaunchScreen.xib */,
@@ -117,6 +120,25 @@
 				E4AEFD181AEE7DF3007BEF68 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4AEFD281AEFCFCF007BEF68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4AEFD291AEFCFE9007BEF68 /* Stock.h */,
+				E4AEFD2A1AEFCFE9007BEF68 /* Stock.m */,
+			);
+			name = Model;
+			path = YahooQuotes;
+			sourceTree = "<group>";
+		};
+		E4AEFD2C1AEFD012007BEF68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4AEFD041AEE7DF3007BEF68 /* ViewController.h */,
+				E4AEFD051AEE7DF3007BEF68 /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +243,7 @@
 			files = (
 				E4AEFD061AEE7DF3007BEF68 /* ViewController.m in Sources */,
 				E4AEFD031AEE7DF3007BEF68 /* AppDelegate.m in Sources */,
+				E4AEFD2B1AEFCFE9007BEF68 /* Stock.m in Sources */,
 				E4AEFD001AEE7DF3007BEF68 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +439,7 @@
 				E4AEFD1F1AEE7DF3007BEF68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4AEFD201AEE7DF3007BEF68 /* Build configuration list for PBXNativeTarget "YahooQuotesTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +448,7 @@
 				E4AEFD221AEE7DF3007BEF68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
 
 // UITextField
 @property (strong, nonatomic) UITextField *textfield;
@@ -16,6 +16,9 @@
 @property (strong, nonatomic) NSString *quote;
 // UILabel
 @property (strong, nonatomic) UILabel *myLabel;
+
+// Quote Method
+-(void)getQuote;
 
 
 @end
